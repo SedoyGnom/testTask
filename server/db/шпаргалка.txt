@@ -1,0 +1,16 @@
+есть второй вариант ассоциаций. но к сожалению не могу пока понять :(
+
+example: 
+// in static
+static associate ({Note}){
+User.Notes = User.hasMany((Note), {
+  foreignKey: 'userId',
+  as: 'notes'
+  })
+}
+
+
+// on root 
+const user = findAll({
+  uinclude: User.Notes
+})

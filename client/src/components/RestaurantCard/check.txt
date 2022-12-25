@@ -1,0 +1,38 @@
+import { memo } from 'react';
+import { Link } from 'react-router-dom';
+
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { Container } from '@mui/material';
+
+
+
+function RestaurantCard({ info }) {
+  console.log(info);
+  return (
+    <Container
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+      }}
+    >
+      <Card sx={{
+        width: '15em'
+      }}>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {info.name}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small"><Link to={`/restaurants/${info.id}`}>Learn More</Link></Button>
+        </CardActions>
+      </Card>
+    </Container>
+  );
+}
+export default memo(RestaurantCard);

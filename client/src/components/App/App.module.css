@@ -1,0 +1,7 @@
+.backgroundMainImg {
+  background: url('../../../assets/watusi-beige-acrylic-texture-background-wallpaper_53876-104727.webp');
+  background-attachment: fixed;
+  width: 100vw;
+  min-height: 100vh;
+
+}

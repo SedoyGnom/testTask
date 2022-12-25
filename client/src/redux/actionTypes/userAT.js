@@ -1,0 +1,9 @@
+export const INIT_USER = 'INIT_USER'
+export const LOGIN_USER = 'LOGIN_USER'
+export const REGISTER_USER = 'REGISTER_USER'
+export const LOGOUT_USER = 'LOGOUT_USER'
+
+export const SAGA_INIT_USER = 'SAGA_INIT_USER'
+export const SAGA_LOGIN_USER = 'SAGA_LOGIN_USER'
+export const SAGA_REGISTER_USER = 'SAGA_REGISTER_USER'
+export const SAGA_LOGOUT_USER = 'SAGA_LOGOUT_USER'
